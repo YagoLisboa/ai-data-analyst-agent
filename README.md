@@ -74,19 +74,19 @@ The solution was built to showcase that **generative AI can be used for data ana
 
 ```mermaid
 graph TD
-    A[User (CLI)] -->|question| B[Agent Selector]
-    B -->|choice| C1[LlamaSQLAgent]
-    B -->|choice| C2[LangChainLocalAgent]
-    B -->|choice| C3[OptimizedLocalAgent]
-    C1 --> D[Prompt Builder (schema + sample rows)]
+    A["User (CLI)"] -->|question| B["Agent Selector"]
+    B -->|choice| C1["LlamaSQLAgent"]
+    B -->|choice| C2["LangChainLocalAgent"]
+    B -->|choice| C3["OptimizedLocalAgent"]
+    C1 --> D["Prompt Builder (schema + sample rows)"]
     C2 --> D
     C3 --> D
-    D --> E[Ollama (Llama 3) API]
-    E -->|SQL query| F[SQLite DB (brazilian_ecommerce.db)]
-    F -->|Result set| G[ pandas DataFrame ]
-    G --> H[Explanation Prompt Builder]
+    D --> E["Ollama (Llama 3) API"]
+    E -->|SQL query| F["SQLite DB (brazilian_ecommerce.db)"]
+    F -->|Result set| G["pandas DataFrame"]
+    G --> H["Explanation Prompt Builder"]
     H --> E
-    E -->|Explanation text| I[CLI Output (SQL + Table + Narrative)]
+    E -->|Explanation text| I["CLI Output (SQL + Table + Narrative)"]
 ```
 
 *All components run locally – the only external process is the Ollama server.*  
@@ -363,7 +363,7 @@ Feel free to open **issues**, propose **pull requests**, or contact me directly 
 
 <div align="center">
 
-*Desenvolvido com ☕, dedicação  e excelência técnica para o Meu Portifólio.*
+*Developed with ☕, dedication and technical excellence for My Portifolio.*
 
-***Feito com <img width="15" height="15" alt="coracao" src="https://github.com/user-attachments/assets/a4d02748-d0f1-46bb-b490-6c86dc06a6e3" /> por Yago Lisboa.***
+***Made with <img width="15" height="15" alt="coracao" src="https://github.com/user-attachments/assets/a4d02748-d0f1-46bb-b490-6c86dc06a6e3" /> by Yago Lisboa.***
 </div>
